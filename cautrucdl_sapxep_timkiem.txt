@@ -1,0 +1,32 @@
+vector: lặp: .begin(); .end(); kích thước: .size(); tham chiếu: at(g);
+.front(): đầu; .back(): cuối; chèn cuối: push_back() pop_back(); xóa hết: clear();
+
+Map: begin(); end(); size(); max_size(): chứa tối đa; empty(); erase(iterator posion): xóa;
+clear(); mp.insert(make_pair(k, v)); mp['x'] = y; find(key): nếu ko tìm thấy .end();
+
+Set: insert, erase(); find(); size(); empty();
+
+queue: push; pop; front()== back(); q1.swap(q2) : đổi 2 hàng đợi; size; empty;
+
+deque: push_front, push_back; pop_front; pop_back; front; back; size; empty;
+
+priority_queue: priority_queue<int> pq: first: 10, 9, 8, 6 , 4, 2
+priority_queue<int, vector<int>, greater<int>> gq: 2, 4, 6 , 8, 9 ,10
+empty; size; top; push; pop;
+
+sort(arr, arr+n, greater<int>()): giảm dần; mặc định: tăng dần
+bool cmp( type a1, type a2) { return i1.start < i2.start}
+sort(arr, arr + n, cmp): a1 và phần tử trong arr cùng loại
+
+stack: empty; size; top; push; pop;
+
+tìm kiếm
+int a = 10;
+auto res = find(vec.begin(), vec.end(), a)
+nếu res == vec.end() ko tìm đc
+
+vector<int> arr = {1, 2, 4, 5, 7, 8, 9};
+   auto it = lower_bound(arr.begin(), arr.end(), 5);
+    cout << "The lower bound of 5 is at position: " << it - arr.begin() << endl;
+    kq : 3
+if (binary_search(b.begin(),b.end(),3)) cout <<"YES"; chỉ mảng tăng dần
