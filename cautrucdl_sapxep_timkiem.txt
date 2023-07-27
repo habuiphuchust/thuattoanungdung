@@ -14,7 +14,7 @@ priority_queue: priority_queue<int> pq: first: 10, 9, 8, 6 , 4, 2
 priority_queue<int, vector<int>, greater<int>> gq: 2, 4, 6 , 8, 9 ,10
 empty; size; top; push; pop;
 
-sort(arr, arr+n, greater<int>()): giảm dần; mặc định: tăng dần
+sort(arr, arr+n, greater<int>()): giảm dần; mặc định: tăng dần; n - 0 là số pt cần sắp xếp
 bool cmp( type a1, type a2) { return i1.start < i2.start}
 sort(arr, arr + n, cmp): a1 và phần tử trong arr cùng loại
 
@@ -28,5 +28,10 @@ nếu res == vec.end() ko tìm đc
 vector<int> arr = {1, 2, 4, 5, 7, 8, 9};
    auto it = lower_bound(arr.begin(), arr.end(), 5);
     cout << "The lower bound of 5 is at position: " << it - arr.begin() << endl;
-    kq : 3
+    kq : 3 vị trí giá trị lớn hơn hoặc bằng giá trị cần tìm
 if (binary_search(b.begin(),b.end(),3)) cout <<"YES"; chỉ mảng tăng dần
+lower_bound va binary_search dùng cho mảnh a[n] được.
+int a[MAX] = {0, 2, 7, 9, 11, 13};
+cout << binary_search(a, a+6, 13); 1
+cout << binary_search(a, a+5, 13); 0: a+ n+1;
+lower_bound(a, a+6, 14) -a : 6, 13:5 nếu bắt đầu từ 1 thì a + n + 1;
