@@ -4,7 +4,7 @@ vector: lặp: .begin(); .end(); kích thước: .size(); tham chiếu: at(g);
 Map: begin(); end(); size(); max_size(): chứa tối đa; empty(); erase(iterator posion): xóa;
 clear(); mp.insert(make_pair(k, v)); mp['x'] = y; find(key): nếu ko tìm thấy .end();
 
-Set: insert, erase(); find(); size(); empty();
+Set: insert, erase(); find(); size(); empty(); auto result = set.insert(); result.second: chèn đc hay ko; result.first: iterator
 
 queue: push; pop; front()== back(); q1.swap(q2) : đổi 2 hàng đợi; size; empty;
 
@@ -35,3 +35,6 @@ int a[MAX] = {0, 2, 7, 9, 11, 13};
 cout << binary_search(a, a+6, 13); 1
 cout << binary_search(a, a+5, 13); 0: a+ n+1;
 lower_bound(a, a+6, 14) -a : 6, 13:5 nếu bắt đầu từ 1 thì a + n + 1;
+
+
+

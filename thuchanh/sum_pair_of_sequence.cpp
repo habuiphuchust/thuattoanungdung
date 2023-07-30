@@ -11,7 +11,7 @@ void input() {
 }
 void solve() {
 	int count = 0;
-	sort(a+1, a+n);
+	sort(a+1, a+n+1);
 	for (int i = 1; i < n; i++) {
 		int fi = m - a[i];
 		bool flag = binary_search(a+i+1, a+n+1, fi);
